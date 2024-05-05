@@ -13,7 +13,7 @@ namespace Game.Scripts.ECS.Systems
                 ref var dragonComponent = ref dragonFilter.Get1(i);
 
 
-                dragonComponent.dragonNavMeshAgent.SetDestination(sceneData.target.position);
+                // dragonComponent.dragonNavMeshAgent.SetDestination(sceneData.target.position);
             }
         }
     }

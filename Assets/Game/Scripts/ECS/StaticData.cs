@@ -1,3 +1,4 @@
+using FPS.Pool;
 using UnityEngine;
 
 namespace Game.Scripts.ECS
@@ -6,6 +7,8 @@ namespace Game.Scripts.ECS
     public class StaticData : ScriptableObject
     {
        public GameObject dragonPrefab;
-       [SerializeField] private float dragonMovementSpeed;
+       public float dragonMovementSpeed;
+       
+
     }
 }

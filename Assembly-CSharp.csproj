@@ -45,27 +45,34 @@
     <Analyzer Include="D:\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\AppInitializer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
-     <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
-     <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Settings" />
      <Folder Include="Assets\Game\Scripts\ECS\Components" />
      <Folder Include="Assets\Game\Scenes" />
      <Folder Include="Assets\Game\Scripts\ECS\Systems" />
+     <Folder Include="Assets\AddressableAssetsData" />
      <Folder Include="Assets\Game\Scripts\ECS" />
      <Folder Include="Assets\Game" />
+     <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
      <Folder Include="Assets\Game\Scenes\SampleScene" />
      <Folder Include="Assets\TutorialInfo\Scripts" />
      <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\ExternalAssets" />
      <Folder Include="Assets\TutorialInfo" />
      <Folder Include="Assets\Game\Prefabs" />
+     <Folder Include="Assets\Game\Prefabs\Food" />
+     <Folder Include="Assets\AddressableAssetsData\AssetGroups" />
+     <Folder Include="Assets\AddressableAssetsData\DataBuilders" />
+     <Folder Include="Assets\AddressableAssetsData\AssetGroups\Schemas" />
      <Folder Include="Assets\Game\Scripts" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -688,14 +695,23 @@
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Addressables">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="FPS.Utils">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\FPS.Utils.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.AI.Navigation">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     <Reference Include="FPS.Pool">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\FPS.Pool.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
@@ -706,11 +722,29 @@
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ResourceManager">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="UniTask.TextMeshPro">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+     </Reference>
+     <Reference Include="UniTask.DOTween">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="UniTask.Addressables">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
@@ -732,6 +766,9 @@
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UniTask.Linq">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
@@ -756,6 +793,9 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
@@ -787,14 +827,17 @@
      <Reference Include="Unity.AI.Navigation.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UniTask">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
