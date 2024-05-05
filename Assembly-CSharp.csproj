@@ -53,6 +53,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Settings" />
@@ -73,6 +74,7 @@
      <Folder Include="Assets\AddressableAssetsData\AssetGroups" />
      <Folder Include="Assets\AddressableAssetsData\DataBuilders" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups\Schemas" />
+     <Folder Include="Assets\Game\Materials" />
      <Folder Include="Assets\Game\Scripts" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

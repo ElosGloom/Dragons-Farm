@@ -7,6 +7,7 @@ namespace Game.Scripts.ECS
     {
         public NavMeshAgent dragonNavMeshAgent;
         public float movementSpeed;
-        
+        public Transform targetPositon;
+
     }
 }
