@@ -1,5 +1,6 @@
 using Leopotam.Ecs;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Game.Scripts.ECS.Systems
 {
@@ -11,11 +12,13 @@ namespace Game.Scripts.ECS.Systems
 
         public void Run()
         {
-            EcsEntity dragonEntity = ecsWorld.NewEntity();
-
-            ref var dragon = ref dragonEntity.Get<DragonComponent>();
+           
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                EcsEntity dragonEntity = ecsWorld.NewEntity();
+
+                ref var dragon = ref dragonEntity.Get<DragonComponent>();
+                
                 float rangeX = sceneData.spawnRangeX;
                 float rangeZ = sceneData.spawnRangeZ;
 
@@ -33,7 +36,7 @@ namespace Game.Scripts.ECS.Systems
 
                 GameObject dragonGO = Object.Instantiate(staticData.dragonPrefab, randomPosition,
                     Quaternion.identity);
-                dragon.dragonRigidbody = dragonGO.GetComponent<Rigidbody>();
+                dragon.dragonNavMeshAgent = dragonGO.GetComponent<NavMeshAgent>();
             }
         }
     }

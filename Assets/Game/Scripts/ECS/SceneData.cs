@@ -8,5 +8,6 @@ namespace Game.Scripts.ECS
         public float spawnRangeZ;
         public float spawnHeight;
         public Transform spawner;
+        public Transform target;
     }
 }

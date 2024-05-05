@@ -722,6 +722,9 @@
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
@@ -785,6 +788,9 @@
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Updater">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
@@ -806,11 +812,17 @@
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
