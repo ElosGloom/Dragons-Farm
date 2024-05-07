@@ -1,13 +1,11 @@
-using UnityEngine;
 using UnityEngine.AI;
 
-namespace Game.Scripts.ECS
+namespace Game.Scripts.ECS.Components
 {
     public struct DragonComponent
     {
-        public NavMeshAgent dragonNavMeshAgent;
-        public float movementSpeed;
-        public Transform targetPositon;
+        public NavMeshAgent DragonNavMeshAgent;
+        public float MovementSpeed;
 
     }
 }

@@ -1,29 +1,35 @@
 ﻿using FPS.Pool;
+using Game.Scripts.ECS.Components;
 using Leopotam.Ecs;
 using UnityEngine;
 
 namespace Game.Scripts.ECS.Systems
 {
-    public class FoodSpawnSystem: IEcsRunSystem
+    public class FoodSpawnSystem : IEcsRunSystem
     {
-        private EcsWorld ecsWorld;
-        private StaticData staticData;
-        private SceneData sceneData;
+        private EcsWorld _ecsWorld;
+        private StaticData _staticData;
+        private SceneData _sceneData;
 
-        
+
         public void Run()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hit))
-                {
-                    var hitPoint = hit.point;
-                    var food = FluffyPool.Get<Transform>("Grass");
-                    food.position = hitPoint;
-                }
-            } 
+            if (!Input.GetMouseButtonDown(0)) return;
+
+            var ray = _sceneData.Camera.ScreenPointToRay(Input.mousePosition);
+
+            if (!Physics.Raycast(ray, out var hit)) return;
+
+            var hitPoint = hit.point;
+            var foodEntity = _ecsWorld.NewEntity();
+
+            ref var foodComponent2 = ref foodEntity.Get<FoodComponent>();
+            foodEntity.Get<AvailableFoodComponent>();
+
+            var foodGO = FluffyPool.Get<Transform>("Grass");
+            foodGO.position = hitPoint;
+
+            foodComponent2.Transform = foodGO.transform;
         }
     }
 }

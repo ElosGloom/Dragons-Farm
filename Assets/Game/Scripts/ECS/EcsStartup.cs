@@ -10,20 +10,22 @@ namespace Game.Scripts.ECS
         [SerializeField] private SceneData sceneData;
 
 
-        private EcsWorld ecsWorld;
-        private EcsSystems systems;
+        private EcsWorld _ecsWorld;
+        private EcsSystems _systems;
 
         private void Start()
         {
-            ecsWorld = new EcsWorld();
-            systems = new EcsSystems(ecsWorld);
+            _ecsWorld = new EcsWorld();
+            _systems = new EcsSystems(_ecsWorld);
 
             RuntimeData runtimeData = new RuntimeData();
 
-            systems
+            _systems
                 .Add(new DragonSpawnSystem())
                 .Add(new FoodSpawnSystem())
+                .Add(new FoodDetectSystem())
                 .Add(new DragonMoveToTargetSystem())
+                .Add(new FoodCollectorSystem())
                 .Inject(configuration)
                 .Inject(sceneData)
                 .Inject(runtimeData)
@@ -33,15 +35,15 @@ namespace Game.Scripts.ECS
 
         private void Update()
         {
-            systems?.Run();
+            _systems?.Run();
         }
 
         private void OnDestroy()
         {
-            systems?.Destroy();
-            systems = null;
-            ecsWorld?.Destroy();
-            ecsWorld = null;
+            _systems?.Destroy();
+            _systems = null;
+            _ecsWorld?.Destroy();
+            _ecsWorld = null;
         }
     }
 }

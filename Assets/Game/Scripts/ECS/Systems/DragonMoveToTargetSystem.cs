@@ -1,19 +1,23 @@
+using Game.Scripts.ECS.Components;
 using Leopotam.Ecs;
 
 namespace Game.Scripts.ECS.Systems
 {
     public class DragonMoveToTargetSystem : IEcsRunSystem
     {
-        private SceneData sceneData;
-        private EcsFilter<DragonComponent> dragonFilter;
+        private EcsFilter<DragonComponent, DragonTargetComponent> _dragonFilter;
+
         public void Run()
         {
-            foreach (var i in dragonFilter)
+            foreach (var i in _dragonFilter)
             {
-                ref var dragonComponent = ref dragonFilter.Get1(i);
+                ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
+                ref var dragonNavMeshComponent = ref _dragonFilter.Get1(i);
+                ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
 
 
-                // dragonComponent.dragonNavMeshAgent.SetDestination(sceneData.target.position);
+                dragonNavMeshComponent.DragonNavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
+                dragonEntity.Get<BusyDragonComponent>();
             }
         }
     }

@@ -6,9 +6,7 @@ namespace Game.Scripts.ECS
     [CreateAssetMenu]
     public class StaticData : ScriptableObject
     {
-       public GameObject dragonPrefab;
-       public float dragonMovementSpeed;
-       
-
+        [field: SerializeField] public GameObject DragonPrefab { get; private set; }
+        [field: SerializeField] public float DragonMovementSpeed { get; private set; }
     }
 }

@@ -47,13 +47,18 @@
   <ItemGroup>
      <Compile Include="Assets\Game\Scripts\ECS\AppInitializer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\AvailableFoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\DragonTargetComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Settings" />
@@ -65,10 +70,7 @@
      <Folder Include="Assets\Game" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
      <Folder Include="Assets\Game\Scenes\SampleScene" />
-     <Folder Include="Assets\TutorialInfo\Scripts" />
-     <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\ExternalAssets" />
-     <Folder Include="Assets\TutorialInfo" />
      <Folder Include="Assets\Game\Prefabs" />
      <Folder Include="Assets\Game\Prefabs\Food" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups" />

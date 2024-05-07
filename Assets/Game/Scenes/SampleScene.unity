@@ -513,11 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c66db2b68d141faae1d3243176cb05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRangeX: 9
-  spawnRangeZ: 9
-  spawnHeight: 2
-  spawner: {fileID: 99159405}
-  target: {fileID: 0}
+  <SpawnRange>k__BackingField: {x: 9, y: 2, z: 9}
+  <Spawner>k__BackingField: {fileID: 99159405}
+  <Camera>k__BackingField: {fileID: 330585545}
 --- !u!1 &1737676527
 GameObject:
   m_ObjectHideFlags: 0
