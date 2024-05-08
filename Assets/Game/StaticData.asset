@@ -15,3 +15,4 @@ MonoBehaviour:
   <DragonPrefab>k__BackingField: {fileID: 2551316546306074248, guid: 19e02134341d08b4e8c4884bb7df37d8,
     type: 3}
   <DragonMovementSpeed>k__BackingField: 0
+  <EatingTime>k__BackingField: 2

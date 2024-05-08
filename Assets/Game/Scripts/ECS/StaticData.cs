@@ -8,5 +8,7 @@ namespace Game.Scripts.ECS
     {
         [field: SerializeField] public GameObject DragonPrefab { get; private set; }
         [field: SerializeField] public float DragonMovementSpeed { get; private set; }
+        [field: SerializeField] public float EatingTime { get; private set; }
+        
     }
 }

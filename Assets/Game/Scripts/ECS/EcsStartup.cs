@@ -25,6 +25,7 @@ namespace Game.Scripts.ECS
                 .Add(new FoodSpawnSystem())
                 .Add(new FoodDetectSystem())
                 .Add(new DragonMoveToTargetSystem())
+                .Add(new TargetDistanceMeterSystem())
                 .Add(new FoodCollectorSystem())
                 .Inject(configuration)
                 .Inject(sceneData)

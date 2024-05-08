@@ -6,6 +6,7 @@ namespace Game.Scripts.ECS.Components
     {
         public NavMeshAgent DragonNavMeshAgent;
         public float MovementSpeed;
+        public float EatingTimeLeft;
 
     }
 }

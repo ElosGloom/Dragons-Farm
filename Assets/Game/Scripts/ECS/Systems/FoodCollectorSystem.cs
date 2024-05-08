@@ -1,14 +1,14 @@
 ﻿using FPS.Pool;
 using Game.Scripts.ECS.Components;
 using Leopotam.Ecs;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Scripts.ECS.Systems
 {
     public class FoodCollectorSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, DragonTargetComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, DragonTargetComponent, ReadyToEatComponent> _dragonFilter;
+        private StaticData _staticData;
 
         public void Run()
         {
@@ -18,23 +18,18 @@ namespace Game.Scripts.ECS.Systems
 
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
 
-                var dragonGO = dragonEntity.Get<DragonComponent>().DragonNavMeshAgent.GameObject();
+                ref var dragonComponent = ref _dragonFilter.Get1(i);
 
-                var dragonPosition = dragonGO.GetComponent<Transform>().position;
-                var targetPosition = dragonTargetComponent.Target.position;
-
-                Vector2 dragonPos2D = new Vector2(dragonPosition.x, dragonPosition.z);
-                Vector2 targetPos2D = new Vector2(targetPosition.x, targetPosition.z);
-
-                float distanceToTarget = Vector2.Distance(dragonPos2D, targetPos2D);
+                dragonComponent.EatingTimeLeft -= Time.deltaTime;
 
 
-                if (distanceToTarget <= 0f)
+                if (dragonComponent.EatingTimeLeft <= 0)
                 {
                     FluffyPool.Return(dragonTargetComponent.Target);
                     dragonTargetComponent.Target = null;
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();
+                    dragonEntity.Del<ReadyToEatComponent>();
                 }
             }
         }
