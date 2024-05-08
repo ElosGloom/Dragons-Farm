@@ -48,6 +48,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\AppInitializer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
+     <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Swapper.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\ReadyToEatComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
@@ -60,26 +61,71 @@
      <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
+     <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonTargetComponent.cs" />
+     <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\AnimatorController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
      <Folder Include="Assets" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <Folder Include="Assets\Settings" />
      <Folder Include="Assets\Game\Scripts\ECS\Components" />
      <Folder Include="Assets\Game\Scenes" />
+     <None Include="Assets\Suriyun\README.txt" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaOutline.cginc" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Texture" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Prefab" />
      <Folder Include="Assets\Game\Scripts\ECS\Systems" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBodyDoubleShadeWithFeather.hlsl" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\FBX" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Textures\Face" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBody.hlsl" />
      <Folder Include="Assets\AddressableAssetsData" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToon.shader" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\ExternalAssets\Suriyun\README.txt" />
      <Folder Include="Assets\Game\Scripts\ECS" />
+     <Folder Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Textures" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonHead.hlsl" />
      <Folder Include="Assets\Game" />
+     <Folder Include="Assets\ExternalAssets\Suriyun" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonOutline.hlsl" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
      <Folder Include="Assets\Game\Scenes\SampleScene" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\URP_Upgrade" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBodyShadingGradeMap.hlsl" />
+     <Folder Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
      <Folder Include="Assets\ExternalAssets" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\readme.txt" />
      <Folder Include="Assets\Game\Prefabs" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Animations" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Scripts" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaSkin.cginc" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <Folder Include="Assets\Suriyun" />
      <Folder Include="Assets\Game\Prefabs\Food" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\UI" />
+     <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials\Dino_Face" />
      <Folder Include="Assets\AddressableAssetsData\DataBuilders" />
+     <Folder Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups\Schemas" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
      <Folder Include="Assets\Game\Materials" />
      <Folder Include="Assets\Game\Scripts" />
+     <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\package.json" />
+     <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -853,6 +899,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.UniversalToonShader.Urp.Editor.csproj">
+      <Project>{ee7cde0a-649d-83ca-6236-fd118deccd6f}</Project>
+      <Name>Unity.UniversalToonShader.Urp.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
