@@ -18,18 +18,17 @@ namespace Game.Scripts.ECS.Systems
 
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
 
-                ref var dragonComponent = ref _dragonFilter.Get1(i);
+                ref var dragon = ref _dragonFilter.Get1(i);
+                dragon.EatingTimeLeft -= Time.deltaTime;
 
-                dragonComponent.EatingTimeLeft -= Time.deltaTime;
-
-
-                if (dragonComponent.EatingTimeLeft <= 0)
+                if (dragon.EatingTimeLeft <= 0)
                 {
                     FluffyPool.Return(dragonTargetComponent.Target);
                     dragonTargetComponent.Target = null;
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();
                     dragonEntity.Del<ReadyToEatComponent>();
+                    dragon.Animator.SetTrigger("Idle");
                 }
             }
         }

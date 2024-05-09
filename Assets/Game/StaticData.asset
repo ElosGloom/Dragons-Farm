@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f99251d3a894b2295cecadc4d70bd65, type: 3}
   m_Name: StaticData
   m_EditorClassIdentifier: 
-  <DragonPrefab>k__BackingField: {fileID: 2551316546306074248, guid: 19e02134341d08b4e8c4884bb7df37d8,
+  <DragonPrefab>k__BackingField: {fileID: 3648689829221066435, guid: 7479930a110017646970fb91b81d980d,
     type: 3}
   <DragonMovementSpeed>k__BackingField: 0
   <EatingTime>k__BackingField: 2

@@ -37,6 +37,7 @@ namespace Game.Scripts.ECS.Systems
                 var dragonGO = Object.Instantiate(_staticData.DragonPrefab, randomPosition,
                     Quaternion.identity);
                 dragon.DragonNavMeshAgent = dragonGO.GetComponent<NavMeshAgent>();
+                dragon.Animator = dragonGO.GetComponent<Animator>();
             }
         }
     }

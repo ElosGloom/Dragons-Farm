@@ -97,6 +97,7 @@
      <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonHead.hlsl" />
      <Folder Include="Assets\Game" />
      <Folder Include="Assets\ExternalAssets\Suriyun" />
+     <Folder Include="Assets\Game\Animations" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials" />
      <None Include="Assets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonOutline.hlsl" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
