@@ -31,7 +31,7 @@ namespace Game.Scripts.ECS.Systems
 
                 if (!(distanceToTarget <= 0f)) continue;
                 dragon.EatingTimeLeft = _staticData.EatingTime;
-                dragon.Animator.SetTrigger("Eat");
+                dragon.Animator.SetTrigger(AnimationValues.Eat);
                 dragonEntity.Get<ReadyToEatComponent>();
             }
         }

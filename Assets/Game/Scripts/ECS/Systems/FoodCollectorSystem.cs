@@ -28,7 +28,7 @@ namespace Game.Scripts.ECS.Systems
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();
                     dragonEntity.Del<ReadyToEatComponent>();
-                    dragon.Animator.SetTrigger("Idle");
+                    dragon.Animator.SetTrigger(AnimationValues.Idle);
                 }
             }
         }
