@@ -16,12 +16,10 @@ namespace Game.Scripts.ECS.Systems
             {
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
 
-                ref var dragon = ref _dragonFilter.Get1(i);
+                ref var dragonComponent = ref _dragonFilter.Get1(i);
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
 
-                var dragonGO = dragonEntity.Get<DragonComponent>().DragonNavMeshAgent.GameObject();
-
-                var dragonPosition = dragonGO.GetComponent<Transform>().position;
+                var dragonPosition = dragonComponent.NavMeshAgent.transform.position;
                 var targetPosition = dragonTargetComponent.Target.position;
 
                 Vector2 dragonPos2D = new Vector2(dragonPosition.x, dragonPosition.z);
@@ -30,8 +28,8 @@ namespace Game.Scripts.ECS.Systems
                 float distanceToTarget = Vector2.Distance(dragonPos2D, targetPos2D);
 
                 if (!(distanceToTarget <= 0f)) continue;
-                dragon.EatingTimeLeft = _staticData.EatingTime;
-                dragon.Animator.SetTrigger(AnimationValues.Eat);
+                dragonComponent.EatingTimeLeft = _staticData.DragonView.eatingTime;
+                dragonComponent.Animator.SetTrigger(AnimationValues.Eat);
                 dragonEntity.Get<ReadyToEatComponent>();
             }
         }

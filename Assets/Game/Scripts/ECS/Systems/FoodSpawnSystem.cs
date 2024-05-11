@@ -26,10 +26,10 @@ namespace Game.Scripts.ECS.Systems
             ref var foodComponent2 = ref foodEntity.Get<FoodComponent>();
             foodEntity.Get<AvailableFoodComponent>();
 
-            var foodGO = FluffyPool.Get<Transform>("Grass");
-            foodGO.position = hitPoint;
+            var food = FluffyPool.Get<Transform>("Grass");
+            food.position = hitPoint;
 
-            foodComponent2.Transform = foodGO.transform;
+            foodComponent2.Transform = food.transform;
         }
     }
 }

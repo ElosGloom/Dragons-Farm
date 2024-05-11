@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.UniversalToonShader.Urp.Editor", "Unity.UniversalToonShader.Urp.Editor.csproj", "{ee7cde0a-649d-83ca-6236-fd118deccd6f}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{23485b49-d051-1ee6-bd80-d997aa149360}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,8 @@ Global
 		{a2ee710b-864d-8e6b-b421-d1c0dc8164c6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ee7cde0a-649d-83ca-6236-fd118deccd6f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ee7cde0a-649d-83ca-6236-fd118deccd6f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23485b49-d051-1ee6-bd80-d997aa149360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23485b49-d051-1ee6-bd80-d997aa149360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

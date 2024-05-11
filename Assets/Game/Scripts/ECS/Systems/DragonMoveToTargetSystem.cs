@@ -13,10 +13,10 @@ namespace Game.Scripts.ECS.Systems
             foreach (var i in _dragonFilter)
             {
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
-                ref var dragon = ref _dragonFilter.Get1(i);
+                ref var dragonComponent = ref _dragonFilter.Get1(i);
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
-                dragon.DragonNavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
-                dragon.Animator.SetTrigger(AnimationValues.Run);
+                dragonComponent.NavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
+                dragonComponent.Animator.SetTrigger(AnimationValues.Run);
 
                 dragonEntity.Get<BusyDragonComponent>();
             }

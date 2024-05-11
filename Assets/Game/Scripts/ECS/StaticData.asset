@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f99251d3a894b2295cecadc4d70bd65, type: 3}
+  m_Name: StaticData
+  m_EditorClassIdentifier: 
+  <DragonView>k__BackingField: {fileID: 3992496344016100431, guid: 19e02134341d08b4e8c4884bb7df37d8,
+    type: 3}
+  <DragonsSkins>k__BackingField:
+    list:
+    - Key: 0
+      Value: {fileID: 2100000, guid: f180d29a123d50c43bdbe6f56f0dd130, type: 2}
+    - Key: 1
+      Value: {fileID: 2100000, guid: d5f115274d54d5c408218ac42d5b9dc0, type: 2}
+    - Key: 2
+      Value: {fileID: 2100000, guid: d64cbf29694b7654e827b620baa914de, type: 2}
+    - Key: 3
+      Value: {fileID: 2100000, guid: 4d698b5b556e48549a7eefa282f74255, type: 2}
+    - Key: 4
+      Value: {fileID: 2100000, guid: a8ea671c0aa0e884eb6b3cf82068e039, type: 2}
+    - Key: 5
+      Value: {fileID: 2100000, guid: 727881c9382c07e418fec2499c60b34f, type: 2}
+    - Key: 6
+      Value: {fileID: 2100000, guid: 83162f661aca70643ae2e534bdcb514a, type: 2}
+    - Key: 7
+      Value: {fileID: 2100000, guid: b3b02a614ecf91649b26c11304545349, type: 2}
+    - Key: 8
+      Value: {fileID: 2100000, guid: 9f4b5ad522b1b034ea9634deb1030567, type: 2}
+    - Key: 9
+      Value: {fileID: 2100000, guid: b921c7e5264e06e48abaf362c9c4b9f4, type: 2}
+    - Key: 10
+      Value: {fileID: 2100000, guid: 467c661f848620243a1712b7522d6065, type: 2}
+    - Key: 11
+      Value: {fileID: 2100000, guid: fb6231e57304bec4e80f99693085ecbf, type: 2}
+    keyCollision: 0

@@ -45,8 +45,8 @@
     <Analyzer Include="D:\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-     <Folder Include="Assets\TutorialInfo\Scripts\Editor" />
+     <Compile Include="Assets\Game\Scripts\Utils\Editor\SerializableDictionaryPropertyDrawer.cs" />
+     <Folder Include="Assets\Game\Scripts\Utils\Editor" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -871,6 +871,10 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{a2ee710b-864d-8e6b-b421-d1c0dc8164c6}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.UniversalToonShader.Urp.Editor.csproj">
+      <Project>{ee7cde0a-649d-83ca-6236-fd118deccd6f}</Project>
+      <Name>Unity.UniversalToonShader.Urp.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
