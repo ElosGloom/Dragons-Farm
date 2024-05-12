@@ -47,92 +47,224 @@
   <ItemGroup>
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\DragonView.cs" />
-     <Compile Include="Assets\Game\Scripts\AppInitializer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
-     <Compile Include="Assets\Game\Scripts\AnimationValues.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Swapper.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\ReadyToEatComponent.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\SerializableDictionary.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\Enum.cs" />
-     <Compile Include="Assets\Game\Scripts\DragonFactory.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\DragonFactory.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\AnimationValues.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\AvailableFoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\TargetDistanceMeterSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\AppInitializer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
-     <Compile Include="Assets\Game\Scripts\DragonType.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonTargetComponent.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\AnimatorController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\DragonType.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Documentation\Documentation Data" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_URP.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Triplanar Sampling.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Dissolve.shader" />
      <Folder Include="Assets\Settings" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline_Behind_SM2.shader" />
      <Folder Include="Assets\Game\Scripts\ECS\Components" />
      <Folder Include="Assets\Game\Scenes" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_VertexDisplacement.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Outline.txt" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Stylized Water.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\README.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Terrain.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Detail Texture Simple.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_PBS_Main.cginc" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\MatCap" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_DepthTexture.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_Specular_OutlineBlending.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaOutline.cginc" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Vertex Color Albedo.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_MatCap.txt" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Texture" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Prefab" />
      <Folder Include="Assets\Game\Scripts\ECS\Systems" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\HSV.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Old School.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Documentation\Documentation Data\Anchors" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Dissolve.txt" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBodyDoubleShadeWithFeather.hlsl" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS Outline Blended (Specular).shader" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Animated Dissolve.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_OutlineBlending.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\Threshold" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS Outline (Specular).shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\FBX" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Sketch.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Texture Blending.txt" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Textures\Face" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_ShadowHSV.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Desktop_OutlineBlending.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Water.txt" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\SG2_Template_Default.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Snow Accumulation.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_OutlineOnly Blended.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_NdotL Stylization.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Water.txt" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBody.hlsl" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Comic Book.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_CurvedWorld.txt" />
      <Folder Include="Assets\AddressableAssetsData" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToon.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_PBS_Core.cginc" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_Specular.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Wind.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_SurfacePBS.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\!ToonyColorsPro Readme.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Desktop_Specular_OutlineBlending.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Desktop_Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_OutlineOnly SM2.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Ramp Shading LWRP.txt" />
      <Folder Include="Assets\Game\Scripts\ECS" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Include.cginc" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_Desktop.shader" />
      <Folder Include="Assets\Game\Scripts\Utils" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Hologram.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid\TCP2 Hybrid Include.cginc" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\Ramps" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Smoothed Meshes" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_OutlineOnly Blended SM2.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Realistic.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline_Include.cginc" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_AlbedoHSV.txt" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Documentation" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline_Behind.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Normal Mapping.txt" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Textures" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonHead.hlsl" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Blended Outline.shader" />
      <Folder Include="Assets\Game" />
      <Folder Include="Assets\ExternalAssets\Suriyun" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_VertExmotion.txt" />
      <Folder Include="Assets\Game\Animations" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\Dithering" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonOutline.hlsl" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Subsurface Scattering.shader" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\Sketch" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Vertical Fog.txt" />
      <Folder Include="Assets\Game\Scenes\SampleScene" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Water WindWaker2.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Water_CurvedWorld.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Hand Painted.shader" />
      <Folder Include="Assets\ExternalAssets\Suriyun\URP_Upgrade" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline_Stencil.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonBodyShadingGradeMap.hlsl" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Ramp Shading.txt" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures" />
      <Folder Include="Assets\ExternalAssets" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\readme.txt" />
      <Folder Include="Assets\Game\Prefabs" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Animations" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Scripts" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS Outline Blended.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Sketch.txt" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaSkin.cginc" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Include\TCP2_Outline_SM2.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Aura2.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Reflection.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Lava.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Screen Space UV.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Hash Functions.txt" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <Folder Include="Assets\Game\Scripts\ECS\Monobehaviours" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Terrain.txt" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Default_CurvedWorld.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Triplanar.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_PBS.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default\Sketch.shader" />
      <Folder Include="Assets\Game\Prefabs\Food" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_PBS_ShadowMeta.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_Mobile.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Lava Cartoon.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Outline Behind.shader" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_HSV.txt" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UI" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid\TCP2 Hybrid URP Support.cginc" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS (Specular).shader" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials\Dino_Face" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Water.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Desktop_Specular_Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Rim Lighting.txt" />
      <Folder Include="Assets\AddressableAssetsData\DataBuilders" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_Specular_Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Subsurface Scattering.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_NoTile Sampling.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_PBS_BRDF.cginc" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Desktop_Specular.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\TCP2_OutlineOnly.shader" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime" />
      <Folder Include="Assets\AddressableAssetsData\AssetGroups\Schemas" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Water WindWaker.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_CustomAmbient.txt" />
+     <Folder Include="Assets\Game\Scripts\Common" />
      <Folder Include="Assets\Game\Materials" />
      <Folder Include="Assets\Game\Scripts" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Wind Animation.shader" />
+     <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates\TCP2_ShaderTemplate_Default.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water\Poison.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\package.json" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid\TCP2 Hybrid Shader.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Specular.txt" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Detail Texture.shader" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid\TCP2 Hybrid Shader Outline.shader" />
+     <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Reflection.txt" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -751,20 +883,62 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>D:\Unity\2022.3.14f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Addressables">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ResourceManager">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Rider.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     </Reference>
+     <Reference Include="PPv2URPConverters">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Editor">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Leopotam.Ecs">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="FPS.Utils">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\FPS.Utils.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -772,20 +946,11 @@
      <Reference Include="FPS.Pool">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\FPS.Pool.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.AI.Navigation">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ResourceManager">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+     <Reference Include="Unity.Burst">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="UniTask.TextMeshPro">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
@@ -795,9 +960,6 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ScriptableBuildPipeline">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
      </Reference>
      <Reference Include="UniTask.DOTween">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
@@ -823,26 +985,11 @@
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Rider.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="UniTask.Linq">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
@@ -856,32 +1003,23 @@
      <Reference Include="Unity.Addressables.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.AI.Navigation.Updater">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="PPv2URPConverters">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
@@ -892,23 +1030,33 @@
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.ScriptableBuildPipeline.Editor">
      <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Leopotam.Ecs">
-     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+     <Reference Include="Unity.Addressables">
+     <HintPath>E:\unity_projects\Dragons Farm\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{275ad3a9-e326-c991-aa0d-f36ec61374e2}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Editor.csproj">
+      <Project>{b66c2c7e-7630-fd82-9df9-12d8301493b9}</Project>
+      <Name>ToonyColorsPro.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.UniversalToonShader.Urp.Editor.csproj">
       <Project>{ee7cde0a-649d-83ca-6236-fd118deccd6f}</Project>
       <Name>Unity.UniversalToonShader.Urp.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
+      <Project>{6229db86-b2ad-148b-acb3-7fabecebbd84}</Project>
+      <Name>ToonyColorsPro.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
+      <Project>{cb6c6658-1aaa-9dff-6ff2-cf2ea61b86b4}</Project>
+      <Name>ToonyColorsPro2.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
