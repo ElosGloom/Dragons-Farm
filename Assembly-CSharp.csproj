@@ -54,9 +54,11 @@
      <Compile Include="Assets\Game\Scripts\Utils\Enum.cs" />
      <Compile Include="Assets\Game\Scripts\Common\DragonFactory.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\Utils\ScriptableObjectSearcher.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\StaticDataWindow.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
      <Compile Include="Assets\Game\Scripts\Common\AnimationValues.cs" />
@@ -64,6 +66,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Systems\TargetDistanceMeterSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\EcsStartup.cs" />
      <Compile Include="Assets\Game\Scripts\Common\AppInitializer.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\DragonStats.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonMoveToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
@@ -173,6 +176,7 @@
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Textures" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanToonShaderVer2_Project-urp-2.2.3\Runtime\Shaders\UniversalToonHead.hlsl" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\PBS\Blended Outline.shader" />
+     <Folder Include="Assets\Game\Models" />
      <Folder Include="Assets\Game" />
      <Folder Include="Assets\ExternalAssets\Suriyun" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS.shader" />
@@ -186,6 +190,7 @@
      <Folder Include="Assets\AddressableAssetsData\AssetGroupTemplates" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
      <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Textures\Sketch" />
+     <Folder Include="Assets\Game\Scripts\ScriptableObjects" />
      <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Default" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Vertical Fog.txt" />
      <Folder Include="Assets\Game\Scenes\SampleScene" />

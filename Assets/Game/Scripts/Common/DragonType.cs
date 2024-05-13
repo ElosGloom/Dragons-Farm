@@ -6,13 +6,13 @@
         Blue,
         Purple,
         Orange,
-        Black,
-        Pink,
-        BlackAndWhite,
-        White,
-        Red,
-        Yellow,
-        Grey,
-        LightGreen
+        Black
+        // Pink,
+        // BlackAndWhite,
+        // White,
+        // Red,
+        // Yellow,
+        // Grey,
+        // LightGreen
     }
 }

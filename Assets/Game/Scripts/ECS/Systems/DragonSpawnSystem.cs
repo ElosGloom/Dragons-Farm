@@ -1,7 +1,8 @@
+using Game.Scripts.Common;
 using Game.Scripts.ECS.Components;
+using Game.Scripts.ECS.Monobehaviours;
 using Leopotam.Ecs;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace Game.Scripts.ECS.Systems
 {
@@ -16,10 +17,16 @@ namespace Game.Scripts.ECS.Systems
             if (!Input.GetKeyDown(KeyCode.Space)) return;
             var dragonEntity = _ecsWorld.NewEntity();
             ref var dragonComponent = ref dragonEntity.Get<DragonComponent>();
+            
+            var dragonType = Utils.Enum.GetRandom<DragonType>();
 
-            var dragonView = DragonFactory.CreateDragon(_staticData, _sceneData);
+            DragonView dragonView = DragonFactory.CreateDragon(_staticData, _sceneData,dragonType);
+            dragonComponent.FoodAmountToCreateEgg = dragonView.foodAmountToCreateEgg;
             dragonComponent.NavMeshAgent = dragonView.navMeshAgent;
             dragonComponent.Animator = dragonView.animator;
+            dragonComponent.Type = dragonView.type;
+            Debug.Log($" Dragon created! Type: {dragonComponent.Type} Food: {dragonComponent.FoodAmountToCreateEgg}");
+            
         }
     }
 }

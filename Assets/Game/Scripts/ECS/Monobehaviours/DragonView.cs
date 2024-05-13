@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Game.Scripts
+namespace Game.Scripts.ECS.Monobehaviours
 {
     public class DragonView : MonoBehaviour
     {
@@ -10,5 +10,8 @@ namespace Game.Scripts
         public Animator animator;
         public float dragonMovementSpeed;
         public float eatingTime;
+        public int foodAmountToCreateEgg;
+        public DragonType type;
+
     }
 }

@@ -10,7 +10,8 @@ namespace Game.Scripts.ECS.Components
         public float EatingTimeLeft;
         public Animator Animator;
         public DragonType Type;
+        public int FoodCollected;
+        public int FoodAmountToCreateEgg;
 
-       
     }
 }

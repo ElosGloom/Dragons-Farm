@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using FPS;
 using FPS.Pool;
+using Game.Scripts.Common;
+using Game.Scripts.ECS.Monobehaviours;
 using UnityEngine;
 
 namespace Game.Scripts.ECS
@@ -9,6 +11,6 @@ namespace Game.Scripts.ECS
     public class StaticData : ScriptableObject
     {
         [field: SerializeField] public DragonView DragonView{ get; private set; }
-        [field: SerializeField] public SerializableDictionary<DragonType,Material> DragonsSkins { get; private set; }
+        [field: SerializeField] public SerializableDictionary<DragonType,DragonStats> DragonsStats { get; private set; }
     }
 }

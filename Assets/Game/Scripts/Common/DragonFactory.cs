@@ -1,24 +1,29 @@
 ﻿using Game.Scripts.ECS;
+using Game.Scripts.ECS.Monobehaviours;
+using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Game.Scripts
+namespace Game.Scripts.Common
 {
     public static class DragonFactory
     {
-        public static DragonView CreateDragon(StaticData staticData, SceneData sceneData)
+        public static DragonView CreateDragon(StaticData staticData, SceneData sceneData, DragonType dragonType)
         {
-            var dragonType = Utils.Enum.GetRandom<DragonType>();
-            staticData.DragonsSkins.TryGetValue(dragonType, out var material);
-            var dragonRenderers = staticData.DragonView.GetComponent<DragonView>();
-            foreach (var i in dragonRenderers.renderers)
+            staticData.DragonsStats.TryGetValue(dragonType, out var dragonStats);
+
+            var dragonView = staticData.DragonView.GetComponent<DragonView>();
+            foreach (var i in dragonView.renderers)
             {
-                i.material = material;
+               i.material = dragonStats.material;
             }
+
+            dragonView.foodAmountToCreateEgg = dragonStats.foodAmountToCreateEgg;
+            dragonView.type = dragonType;
 
             DragonView dragon = Object.Instantiate(staticData.DragonView,
                 GetRandomSpawnPosition(sceneData),
                 GetRandomRotation());
-            
+
             return dragon;
         }
 
