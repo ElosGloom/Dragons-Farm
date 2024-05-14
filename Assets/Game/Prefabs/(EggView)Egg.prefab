@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33fb809564db430fa6bcad63fcfb6a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 8864289358424992411}
+  eggRenderer: {fileID: 8864289358424992411}
   timeToHatch: 10
 --- !u!114 &8415713997661267964
 MonoBehaviour:

@@ -28,9 +28,10 @@ namespace Game.Scripts.ECS.Systems
                 
                 ref var dragonComponent = ref dragonEntity.Get<DragonComponent>();
                 ref var foodConsumerComponent = ref dragonEntity.Get<FoodConsumerComponent>();
+                ref var movableComponent = ref dragonEntity.Get<MovableComponent>();
                 foodConsumerComponent.FoodAmountToCreateEgg = dragonView.foodAmountToCreateEgg;
-                dragonComponent.NavMeshAgent = dragonView.navMeshAgent;
-                dragonComponent.Animator = dragonView.animator;
+                movableComponent.NavMeshAgent = dragonView.navMeshAgent;
+                movableComponent.Animator = dragonView.animator;
                 dragonComponent.Type = readyToBornComponent.Type;
                 
                 dragonEntity.Del<ReadyToBornComponent>();

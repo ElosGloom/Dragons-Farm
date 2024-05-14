@@ -6,17 +6,18 @@ namespace Game.Scripts.ECS.Systems
 {
     public class DragonMoveToTargetSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, DragonTargetComponent>.Exclude<BusyDragonComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, DragonTargetComponent,MovableComponent>.Exclude<BusyDragonComponent> _dragonFilter;
 
         public void Run()
         {
             foreach (var i in _dragonFilter)
             {
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
-                ref var dragonComponent = ref _dragonFilter.Get1(i);
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
-                dragonComponent.NavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
-                dragonComponent.Animator.SetTrigger(AnimationValues.Run);
+                ref var movableComponent = ref _dragonFilter.Get3(i);
+                
+                movableComponent.NavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
+                movableComponent.Animator.SetTrigger(AnimationValues.Run);
 
                 dragonEntity.Get<BusyDragonComponent>();
             }

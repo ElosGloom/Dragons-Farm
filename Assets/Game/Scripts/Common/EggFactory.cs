@@ -11,7 +11,7 @@ namespace Game.Scripts.Common
             var eggView = FPS.Pool.FluffyPool.Get<EggView>("Egg");
             staticData.DragonsStats.TryGetValue(dragonType, out var stats);
             eggView.transform.position = spawnPosition;
-            eggView.renderer.material = stats.eggMaterial;
+            eggView.eggRenderer.material = stats.eggMaterial;
             return eggView;
         }
     }

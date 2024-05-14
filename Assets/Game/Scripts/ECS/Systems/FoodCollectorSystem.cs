@@ -7,7 +7,7 @@ namespace Game.Scripts.ECS.Systems
 {
     public class FoodCollectorSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, FoodConsumerComponent,DragonTargetComponent, ReadyToEatComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, FoodConsumerComponent,DragonTargetComponent, ReadyToEatComponent,MovableComponent> _dragonFilter;
         private StaticData _staticData;
 
         public void Run()
@@ -15,11 +15,10 @@ namespace Game.Scripts.ECS.Systems
             foreach (var i in _dragonFilter)
             {
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
-
                 ref var dragonTargetComponent = ref _dragonFilter.Get3(i);
                 ref var foodConsumerComponent = ref _dragonFilter.Get2(i);
+                ref var movableComponent = ref _dragonFilter.Get5(i);
 
-                ref var dragonComponent = ref _dragonFilter.Get1(i);
                 foodConsumerComponent.EatingTimeLeft -= Time.deltaTime;
 
                 if (foodConsumerComponent.EatingTimeLeft <= 0)
@@ -30,7 +29,7 @@ namespace Game.Scripts.ECS.Systems
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();
                     dragonEntity.Del<ReadyToEatComponent>();
-                    dragonComponent.Animator.SetTrigger(AnimationValues.Idle);
+                    movableComponent.Animator.SetTrigger(AnimationValues.Idle);
                 }
             }
         }

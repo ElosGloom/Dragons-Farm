@@ -4,7 +4,7 @@ namespace Game.Scripts.ECS.Monobehaviours
 {
     public class EggView : MonoBehaviour
     {
-        public Renderer renderer;
+        public Renderer eggRenderer;
         public float timeToHatch;
     }
 }

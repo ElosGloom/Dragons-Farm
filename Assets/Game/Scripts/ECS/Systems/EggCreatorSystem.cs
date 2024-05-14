@@ -7,7 +7,7 @@ namespace Game.Scripts.ECS.Systems
 {
     public class EggCreatorSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, SatietyComponent, FoodConsumerComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, SatietyComponent, FoodConsumerComponent,MovableComponent> _dragonFilter;
         private EcsWorld _ecsWorld;
         private StaticData _staticData;
 
@@ -18,6 +18,7 @@ namespace Game.Scripts.ECS.Systems
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
                 ref var dragonComponent = ref _dragonFilter.Get1(i);
                 ref var foodConsumerComponent = ref _dragonFilter.Get3(i);
+                ref var movableComponent = ref _dragonFilter.Get4(i);
                 
                 foodConsumerComponent.FoodCollected = 0;
                 
@@ -27,7 +28,7 @@ namespace Game.Scripts.ECS.Systems
 
                 EggView eggView = EggFactory.CreateEgg(_staticData,
                     dragonComponent.Type,
-                    dragonComponent.NavMeshAgent.transform.position);
+                    movableComponent.NavMeshAgent.transform.position);
                 eggComponent.Position = eggView.transform.position;
                 eggComponent.BornTimeLeft = eggView.timeToHatch;
                 eggComponent.EggView = eggView;

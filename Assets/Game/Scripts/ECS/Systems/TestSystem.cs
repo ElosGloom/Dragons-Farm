@@ -19,14 +19,15 @@ namespace Game.Scripts.ECS.Systems
             var dragonEntity = _ecsWorld.NewEntity();
             ref var dragonComponent = ref dragonEntity.Get<DragonComponent>();
             ref var foodConsumerComponent = ref dragonEntity.Get<FoodConsumerComponent>();
+            ref var movableComponent = ref dragonEntity.Get<MovableComponent>();
 
             var dragonType = Utils.Enum.GetRandom<DragonType>();
 
             DragonView dragonView = DragonFactory.CreateDragon(_staticData, dragonType,
                 RandomPosition.GetRandomSpawnPosition(_sceneData), RandomRotation.GetRandomRotation());
             foodConsumerComponent.FoodAmountToCreateEgg = dragonView.foodAmountToCreateEgg;
-            dragonComponent.NavMeshAgent = dragonView.navMeshAgent;
-            dragonComponent.Animator = dragonView.animator;
+            movableComponent.NavMeshAgent = dragonView.navMeshAgent;
+            movableComponent.Animator = dragonView.animator;
             dragonComponent.Type = dragonType;
 
             Debug.Log(
