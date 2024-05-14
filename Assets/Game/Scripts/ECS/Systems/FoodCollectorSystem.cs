@@ -7,7 +7,7 @@ namespace Game.Scripts.ECS.Systems
 {
     public class FoodCollectorSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, DragonTargetComponent, ReadyToEatComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, FoodConsumerComponent,DragonTargetComponent, ReadyToEatComponent> _dragonFilter;
         private StaticData _staticData;
 
         public void Run()
@@ -16,19 +16,21 @@ namespace Game.Scripts.ECS.Systems
             {
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
 
-                ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
+                ref var dragonTargetComponent = ref _dragonFilter.Get3(i);
+                ref var foodConsumerComponent = ref _dragonFilter.Get2(i);
 
-                ref var dragon = ref _dragonFilter.Get1(i);
-                dragon.EatingTimeLeft -= Time.deltaTime;
+                ref var dragonComponent = ref _dragonFilter.Get1(i);
+                dragonComponent.EatingTimeLeft -= Time.deltaTime;
 
-                if (dragon.EatingTimeLeft <= 0)
+                if (dragonComponent.EatingTimeLeft <= 0)
                 {
+                    foodConsumerComponent.FoodCollected++;
                     FluffyPool.Return(dragonTargetComponent.Target);
                     dragonTargetComponent.Target = null;
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();
                     dragonEntity.Del<ReadyToEatComponent>();
-                    dragon.Animator.SetTrigger(AnimationValues.Idle);
+                    dragonComponent.Animator.SetTrigger(AnimationValues.Idle);
                 }
             }
         }

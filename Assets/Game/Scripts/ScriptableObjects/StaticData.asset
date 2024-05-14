@@ -19,21 +19,26 @@ MonoBehaviour:
     - Key: 0
       Value:
         material: {fileID: 2100000, guid: 290a11fb13193d843b8b35d16c4aa53a, type: 2}
-        foodAmountToCreateEgg: 5
+        foodAmountToCreateEgg: 1
+        eggMaterial: {fileID: 2100000, guid: c4b358c0d072dff4f8d3f40e686b0d2e, type: 2}
     - Key: 1
       Value:
         material: {fileID: 2100000, guid: c07ae2dacbec7674cb51a9cf08d5fb16, type: 2}
-        foodAmountToCreateEgg: 8
+        foodAmountToCreateEgg: 2
+        eggMaterial: {fileID: 2100000, guid: 77e3ec4712748434193d6925cc80b784, type: 2}
     - Key: 2
       Value:
         material: {fileID: 2100000, guid: b951a316889d9914380e95aa447198fa, type: 2}
-        foodAmountToCreateEgg: 10
+        foodAmountToCreateEgg: 3
+        eggMaterial: {fileID: 2100000, guid: 6d67de892087d864e864a6d3a486ca40, type: 2}
     - Key: 3
       Value:
         material: {fileID: 2100000, guid: 4d698b5b556e48549a7eefa282f74255, type: 2}
-        foodAmountToCreateEgg: 15
+        foodAmountToCreateEgg: 4
+        eggMaterial: {fileID: 2100000, guid: c5b507e064d7c3241ac47398b20f0a94, type: 2}
     - Key: 4
       Value:
         material: {fileID: 2100000, guid: a8ea671c0aa0e884eb6b3cf82068e039, type: 2}
-        foodAmountToCreateEgg: 20
+        foodAmountToCreateEgg: 5
+        eggMaterial: {fileID: 2100000, guid: 3843621de51272148b4b67adeb9db46f, type: 2}
     keyCollision: 0

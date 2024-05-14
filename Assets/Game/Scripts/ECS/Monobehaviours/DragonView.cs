@@ -11,7 +11,5 @@ namespace Game.Scripts.ECS.Monobehaviours
         public float dragonMovementSpeed;
         public float eatingTime;
         public int foodAmountToCreateEgg;
-        public DragonType type;
-
     }
 }

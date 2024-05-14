@@ -134,7 +134,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &3992496344016100431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,8 +157,9 @@ MonoBehaviour:
   animator: {fileID: 1283426220706811938}
   dragonMovementSpeed: 0
   eatingTime: 2
-  foodAmountToCreateEgg: 8
+  foodAmountToCreateEgg: 2
   type: 1
+  eggMaterial: {fileID: 2100000, guid: 77e3ec4712748434193d6925cc80b784, type: 2}
 --- !u!1001 &1283426220699428162
 PrefabInstance:
   m_ObjectHideFlags: 0
