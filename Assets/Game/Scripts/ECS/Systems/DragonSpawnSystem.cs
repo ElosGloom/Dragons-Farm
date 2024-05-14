@@ -32,8 +32,6 @@ namespace Game.Scripts.ECS.Systems
                 dragonComponent.NavMeshAgent = dragonView.navMeshAgent;
                 dragonComponent.Animator = dragonView.animator;
                 dragonComponent.Type = readyToBornComponent.Type;
-                _staticData.DragonsStats.TryGetValue(readyToBornComponent.Type, out var stats);
-                dragonComponent.EggMaterial = stats.eggMaterial;
                 
                 dragonEntity.Del<ReadyToBornComponent>();
                 Debug.Log($" Dragon created! Type: {dragonComponent.Type} Food: {foodConsumerComponent.FoodAmountToCreateEgg}");

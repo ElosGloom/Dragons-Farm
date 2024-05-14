@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using FPS;
-using FPS.Pool;
 using Game.Scripts.Common;
 using Game.Scripts.ECS.Monobehaviours;
 using UnityEngine;

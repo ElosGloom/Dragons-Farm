@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33fb809564db430fa6bcad63fcfb6a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 8864289358436727739}
   renderer: {fileID: 8864289358424992411}
   timeToHatch: 10
 --- !u!114 &8415713997661267964
@@ -211,9 +210,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!4 &8864289358436727739 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 6f8ba016715213346b7ec8020dbde34f,
-    type: 3}
-  m_PrefabInstance: {fileID: 8864289358436589883}
-  m_PrefabAsset: {fileID: 0}

@@ -6,7 +6,7 @@ namespace Game.Scripts.ECS.Systems
     public class SatietyCheckSystem : IEcsRunSystem
     {
         private EcsFilter<DragonComponent, FoodConsumerComponent> _dragonFilter;
-        
+
         public void Run()
         {
             foreach (var i in _dragonFilter)

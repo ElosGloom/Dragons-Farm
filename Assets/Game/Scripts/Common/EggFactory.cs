@@ -1,15 +1,17 @@
-﻿using Game.Scripts.ECS.Monobehaviours;
+﻿using Game.Scripts.ECS;
+using Game.Scripts.ECS.Monobehaviours;
 using UnityEngine;
 
 namespace Game.Scripts.Common
 {
     public static class EggFactory
     {
-        public static EggView CreateEgg(Material material,Vector3 spawnPosition)
+        public static EggView CreateEgg(StaticData staticData, DragonType dragonType, Vector3 spawnPosition)
         {
-            var eggView =  FPS.Pool.FluffyPool.Get<EggView>("Egg");
+            var eggView = FPS.Pool.FluffyPool.Get<EggView>("Egg");
+            staticData.DragonsStats.TryGetValue(dragonType, out var stats);
             eggView.transform.position = spawnPosition;
-            eggView.renderer.material = material;
+            eggView.renderer.material = stats.eggMaterial;
             return eggView;
         }
     }

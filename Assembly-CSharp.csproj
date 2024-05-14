@@ -113,6 +113,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\MovableComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonTargetComponent.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\AnimatorController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />

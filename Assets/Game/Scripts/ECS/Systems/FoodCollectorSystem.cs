@@ -20,9 +20,9 @@ namespace Game.Scripts.ECS.Systems
                 ref var foodConsumerComponent = ref _dragonFilter.Get2(i);
 
                 ref var dragonComponent = ref _dragonFilter.Get1(i);
-                dragonComponent.EatingTimeLeft -= Time.deltaTime;
+                foodConsumerComponent.EatingTimeLeft -= Time.deltaTime;
 
-                if (dragonComponent.EatingTimeLeft <= 0)
+                if (foodConsumerComponent.EatingTimeLeft <= 0)
                 {
                     foodConsumerComponent.FoodCollected++;
                     FluffyPool.Return(dragonTargetComponent.Target);

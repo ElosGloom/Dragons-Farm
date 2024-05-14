@@ -4,5 +4,6 @@
     {
         public int FoodCollected;
         public int FoodAmountToCreateEgg;
+        public float EatingTimeLeft;
     }
 }
