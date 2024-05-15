@@ -54,6 +54,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\DragonView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\DragonButtonGroupElement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\ScriptableObjectSearcher.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\DragonButtonsGroup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
