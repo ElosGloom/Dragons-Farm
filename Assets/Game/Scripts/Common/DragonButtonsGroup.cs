@@ -28,6 +28,7 @@ namespace Game.Scripts.Common
 
                 var type = (DragonType)_dragonTypes.GetValue(i);
                 newButton.buttonText.text = type.ToString();
+                newButton.type = type;
             }
         }
     }

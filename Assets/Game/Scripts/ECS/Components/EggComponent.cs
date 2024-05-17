@@ -1,4 +1,5 @@
-﻿using Game.Scripts.ECS.Monobehaviours;
+﻿using Game.Scripts.Common;
+using Game.Scripts.ECS.Monobehaviours;
 using UnityEngine;
 
 namespace Game.Scripts.ECS.Components

@@ -1,4 +1,4 @@
-﻿namespace Game.Scripts
+﻿namespace Game.Scripts.Common
 {
     public enum DragonType
     {
@@ -6,7 +6,7 @@
         Blue,
         Purple,
         Orange,
-        Black
+        Black,
         // Pink,
         // BlackAndWhite,
         // White,
