@@ -18,11 +18,15 @@ namespace Game.Scripts.ECS.Systems
                     ref var foodComponent = ref _availableFoodFilter.Get2(j);
 
                     ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
-                    ref var dragonTargetComponent = ref dragonEntity.Get<DragonTargetComponent>();
-                    dragonTargetComponent.Target = foodComponent.Transform;
+                    ref var dragonComponent = ref dragonEntity.Get<DragonComponent>();
+                    if (foodComponent.Type == dragonComponent.SuitableFood)
+                    {
+                        ref var dragonTargetComponent = ref dragonEntity.Get<DragonTargetComponent>();
+                        dragonTargetComponent.Target = foodComponent.Transform;
 
-                    foodEntity.Del<AvailableFoodComponent>();
-                    break;
+                        foodEntity.Del<AvailableFoodComponent>();
+                        break;
+                    }
                 }
             }
         }

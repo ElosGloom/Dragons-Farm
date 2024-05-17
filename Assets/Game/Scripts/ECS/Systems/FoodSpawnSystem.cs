@@ -30,18 +30,19 @@ namespace Game.Scripts.ECS.Systems
             var hitPoint = hit.point;
             var foodEntity = _ecsWorld.NewEntity();
 
-            ref var foodComponent2 = ref foodEntity.Get<FoodComponent>();
+            ref var foodComponent = ref foodEntity.Get<FoodComponent>();
             foodEntity.Get<AvailableFoodComponent>();
 
             var food = FluffyPool.Get<Transform>(_type.ToString());
             food.position = hitPoint;
 
-            foodComponent2.Transform = food.transform;
+            foodComponent.Transform = food.transform;
+            foodComponent.Type = _type;
         }
 
         public void Destroy()
         {
-            throw new System.NotImplementedException();
+            FoodButtonElement.FoodSpawnButtonClick -= SetFruitType;
         }
         
         private void SetFruitType(FoodType foodType)

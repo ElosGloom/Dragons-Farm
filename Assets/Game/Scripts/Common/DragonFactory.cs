@@ -11,6 +11,7 @@ namespace Game.Scripts.Common
             staticData.DragonsStats.TryGetValue(dragonType, out var dragonStats);
             var dragonView = staticData.DragonView.GetComponent<DragonView>();
             dragonView.foodAmountToCreateEgg = dragonStats.foodAmountToCreateEgg;
+            dragonView.suitableFood = dragonStats.suitableFood;
             
             foreach (var i in dragonView.renderers)
             {

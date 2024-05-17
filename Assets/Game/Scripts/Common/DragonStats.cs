@@ -9,5 +9,6 @@ namespace Game.Scripts.Common
         public Material material;
         public int foodAmountToCreateEgg;
         public Material eggMaterial;
+        public FoodType suitableFood;
     }
 }

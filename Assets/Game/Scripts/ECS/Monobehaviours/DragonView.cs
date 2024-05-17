@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Game.Scripts.Common;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace Game.Scripts.ECS.Monobehaviours
@@ -11,5 +12,6 @@ namespace Game.Scripts.ECS.Monobehaviours
         public float dragonMovementSpeed;
         public float eatingTime;
         public int foodAmountToCreateEgg;
+        public FoodType suitableFood;
     }
 }
