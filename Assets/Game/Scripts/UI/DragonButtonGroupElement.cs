@@ -1,9 +1,10 @@
 ﻿using System;
+using Game.Scripts.Common;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scripts.Common
+namespace Game.Scripts.UI
 {
     public class DragonButtonGroupElement : MonoBehaviour
     {

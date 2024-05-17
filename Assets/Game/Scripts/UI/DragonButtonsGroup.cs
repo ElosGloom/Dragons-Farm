@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.Scripts.Common;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scripts.Common
+namespace Game.Scripts.UI
 {
     public class DragonButtonsGroup : MonoBehaviour
     {
-        [SerializeField] private HorizontalLayoutGroup layoutGroup;
+        [SerializeField] private VerticalLayoutGroup layoutGroup;
         [SerializeField] private List<DragonButtonGroupElement> buttonsList = new();
         [SerializeField] private DragonButtonGroupElement button;
 

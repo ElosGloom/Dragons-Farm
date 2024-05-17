@@ -48,17 +48,18 @@
      <Compile Include="Assets\Game\Scripts\ECS\Components\ReadyToBornComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\DragonButtonsGroup.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\DragonView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\Game\Scripts\Common\DragonButtonGroupElement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\Game\Scripts\Common\EggFactory.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\FoodButtonElement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Swapper.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -70,8 +71,9 @@
      <Compile Include="Assets\Game\Scripts\Common\DragonFactory.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\FoodButtonsGroup.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\DragonButtonGroupElement.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\ScriptableObjectSearcher.cs" />
-     <Compile Include="Assets\Game\Scripts\Common\DragonButtonsGroup.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodCollectorSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
@@ -88,7 +90,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-     <Compile Include="Assets\Game\Scripts\ECS\Components\DragonButtonComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\AvailableFoodComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\EggView.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\TargetDistanceMeterSystem.cs" />
@@ -118,6 +119,7 @@
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\MovableComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonTargetComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\FoodType.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\AnimatorController.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\SceneData.cs" />
      <Compile Include="Assets\Game\Scripts\Common\DragonType.cs" />
@@ -148,6 +150,7 @@
      <None Include="Assets\ExternalAssets\Suriyun\README.txt" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_Terrain.txt" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Detail Texture Simple.shader" />
+     <Folder Include="Assets\Game\Scripts\UI" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_PBS_Main.cginc" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
