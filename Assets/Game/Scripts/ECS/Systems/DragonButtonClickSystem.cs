@@ -21,7 +21,7 @@ namespace Game.Scripts.ECS.Systems
 
         public void Destroy()
         {
-            DragonButtonGroupElement.DragonSpawnButtonClick += (SetDragonType);
+            DragonButtonGroupElement.DragonSpawnButtonClick -= (SetDragonType);
         }
 
         private void SetDragonType(DragonType type)

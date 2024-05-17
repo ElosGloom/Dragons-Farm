@@ -8,7 +8,7 @@ namespace Game.Scripts.UI
 {
     public class FoodButtonElement : MonoBehaviour
     {
-        public static event Action<string> FoodSpawnButtonClick;
+        public static event Action<FoodType> FoodSpawnButtonClick;
         public TextMeshProUGUI buttonText;
         public Button button;
         public FoodType type;
@@ -20,7 +20,7 @@ namespace Game.Scripts.UI
 
         private void OnDragonSpawnButtonClick()
         {
-            FoodSpawnButtonClick?.Invoke(type.ToString());
+            FoodSpawnButtonClick?.Invoke(type);
         }
     }
 }
