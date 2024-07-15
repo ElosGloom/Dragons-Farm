@@ -50,6 +50,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Game\Scripts\UI\DragonButtonsGroup.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodTypeSetterSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\DragonComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\DragonView.cs" />
@@ -80,6 +81,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodConsumerComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\RotateToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Common\StaticDataWindow.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
@@ -166,6 +168,7 @@
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shader Templates 2\Modules\Module_MatCap.txt" />
      <Folder Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Texture" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+     <Folder Include="Assets\Game\Materials\Food" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Prefab" />
      <Folder Include="Assets\Game\Scripts\ECS\Systems" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />

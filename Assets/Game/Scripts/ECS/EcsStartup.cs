@@ -28,6 +28,7 @@ namespace Game.Scripts.ECS
                 .Add(new EggHatchingSystem())
                 .Add(new FoodSpawnSystem())
                 .Add(new FoodDetectSystem())
+                .Add(new  RotateToTargetSystem())
                 .Add(new DragonMoveToTargetSystem())
                 .Add(new TargetDistanceMeterSystem())
                 .Add(new FoodCollectorSystem())

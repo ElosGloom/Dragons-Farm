@@ -23,7 +23,7 @@ namespace Game.Scripts.ECS.Systems
                     {
                         ref var dragonTargetComponent = ref dragonEntity.Get<DragonTargetComponent>();
                         dragonTargetComponent.Target = foodComponent.Transform;
-
+                        foodEntity.Get<FoodComponent>();
                         foodEntity.Del<AvailableFoodComponent>();
                         break;
                     }

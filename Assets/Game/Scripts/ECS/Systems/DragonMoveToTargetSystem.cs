@@ -6,7 +6,8 @@ namespace Game.Scripts.ECS.Systems
 {
     public class DragonMoveToTargetSystem : IEcsRunSystem
     {
-        private EcsFilter<DragonComponent, DragonTargetComponent,MovableComponent>.Exclude<BusyDragonComponent> _dragonFilter;
+        private EcsFilter<DragonComponent, DragonTargetComponent, MovableComponent>.Exclude<BusyDragonComponent>
+            _dragonFilter;
 
         public void Run()
         {
@@ -15,7 +16,7 @@ namespace Game.Scripts.ECS.Systems
                 ref EcsEntity dragonEntity = ref _dragonFilter.GetEntity(i);
                 ref var dragonTargetComponent = ref _dragonFilter.Get2(i);
                 ref var movableComponent = ref _dragonFilter.Get3(i);
-                
+
                 movableComponent.NavMeshAgent.SetDestination(dragonTargetComponent.Target.position);
                 movableComponent.Animator.SetTrigger(AnimationValues.Run);
 
