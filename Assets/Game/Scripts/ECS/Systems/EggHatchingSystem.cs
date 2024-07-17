@@ -1,4 +1,6 @@
-﻿using FPS.Pool;
+﻿using System;
+using System.Globalization;
+using FPS.Pool;
 using Game.Scripts.ECS.Components;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -19,6 +21,7 @@ namespace Game.Scripts.ECS.Systems
                 ref EcsEntity eggEntity = ref _eggFilter.GetEntity(i);
                 ref var eggComponent = ref _eggFilter.Get1(i);
                 eggComponent.BornTimeLeft -= Time.deltaTime;
+                eggComponent.FillImage.fillAmount = eggComponent.BornTimeLeft/eggComponent.TimeToHatch;
 
                 if (eggComponent.BornTimeLeft <= 0)
                 {

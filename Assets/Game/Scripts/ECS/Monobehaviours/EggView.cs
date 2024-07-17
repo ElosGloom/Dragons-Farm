@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game.Scripts.ECS.Monobehaviours
 {
@@ -6,5 +8,6 @@ namespace Game.Scripts.ECS.Monobehaviours
     {
         public Renderer eggRenderer;
         public float timeToHatch;
+        public Image fillImage;
     }
 }

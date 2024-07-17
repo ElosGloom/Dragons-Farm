@@ -30,8 +30,10 @@ namespace Game.Scripts.ECS.Systems
                     dragonComponent.Type,
                     movableComponent.NavMeshAgent.transform.position);
                 eggComponent.Position = eggView.transform.position;
-                eggComponent.BornTimeLeft = eggView.timeToHatch;
+                eggComponent.TimeToHatch = eggView.timeToHatch;
+                eggComponent.BornTimeLeft = eggComponent.TimeToHatch;
                 eggComponent.EggView = eggView;
+                eggComponent.FillImage = eggView.fillImage;
                 
                 dragonEntity.Del<SatietyComponent>();
                 
