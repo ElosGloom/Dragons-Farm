@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Game\Scripts\ECS\Components\ReadyToBornComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\EggTimer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Game\Scripts\UI\DragonButtonsGroup.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
