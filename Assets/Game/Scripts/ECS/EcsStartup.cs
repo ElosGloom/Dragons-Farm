@@ -21,7 +21,9 @@ namespace Game.Scripts.ECS
             RuntimeData runtimeData = new RuntimeData();
 
             _systems
+                .Add(new LoadSystem())
                 .Add(new DragonButtonClickSystem())
+                .Add(new SaveSystem())
                 .Add(new DragonSpawnSystem())
                 .Add(new SatietyCheckSystem())
                 .Add(new EggCreatorSystem())

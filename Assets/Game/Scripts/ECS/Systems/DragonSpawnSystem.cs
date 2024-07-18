@@ -34,6 +34,7 @@ namespace Game.Scripts.ECS.Systems
                 movableComponent.Animator = dragonView.animator;
                 dragonComponent.Type = readyToBornComponent.Type;
                 dragonComponent.SuitableFood = dragonView.suitableFood;
+                movableComponent.Transform = movableComponent.NavMeshAgent.transform;
                 
                 dragonEntity.Del<ReadyToBornComponent>();
                 Debug.Log($" Dragon created! Type: {dragonComponent.Type} Food: {dragonComponent.SuitableFood} {foodConsumerComponent.FoodAmountToCreateEgg}");

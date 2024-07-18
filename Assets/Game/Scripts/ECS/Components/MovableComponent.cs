@@ -7,5 +7,6 @@ namespace Game.Scripts.ECS.Components
     {
         public NavMeshAgent NavMeshAgent;
         public Animator Animator;
+        public Transform Transform;
     }
 }

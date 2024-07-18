@@ -19,7 +19,7 @@ namespace Game.Scripts.ECS.Systems
                 ref var foodConsumerComponent = ref _dragonFilter.Get3(i);
                 ref var movableComponent = ref _dragonFilter.Get4(i);
 
-                var dragonPosition = movableComponent.NavMeshAgent.transform.position;
+                var dragonPosition = movableComponent.Transform.position;
                 var targetPosition = dragonTargetComponent.Target.position;
 
                 Vector2 dragonPos2D = new Vector2(dragonPosition.x, dragonPosition.z);
