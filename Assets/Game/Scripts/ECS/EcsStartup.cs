@@ -22,8 +22,8 @@ namespace Game.Scripts.ECS
 
             _systems
                 .Add(new LoadSystem())
-                .Add(new DragonButtonClickSystem())
                 .Add(new SaveSystem())
+                .Add(new DragonButtonClickSystem())
                 .Add(new DragonSpawnSystem())
                 .Add(new SatietyCheckSystem())
                 .Add(new EggCreatorSystem())
@@ -45,8 +45,8 @@ namespace Game.Scripts.ECS
         {
             _systems?.Run();
         }
-
-        private void OnDestroy()
+        
+        private void OnApplicationQuit()
         {
             _systems?.Destroy();
             _systems = null;

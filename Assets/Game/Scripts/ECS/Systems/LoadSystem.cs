@@ -1,4 +1,5 @@
-﻿using Game.Scripts.Common;
+﻿using FPS.Pool;
+using Game.Scripts.Common;
 using Game.Scripts.ECS.Components;
 using Leopotam.Ecs;
 using Newtonsoft.Json;
@@ -31,6 +32,20 @@ namespace Game.Scripts.ECS.Systems
                 readyToBornComponent.Type = dragonData.Type;
                 consumerComponent.FoodCollected = dragonData.FoodCollected;
 
+            }
+
+            foreach (var foodData in saveData.Food)
+            {
+                var foodEntity = _ecsWorld.NewEntity();
+
+                ref var foodComponent = ref foodEntity.Get<FoodComponent>();
+                foodEntity.Get<AvailableFoodComponent>();
+
+                var food = FluffyPool.Get<Transform>(foodData.Type.ToString());
+                food.position = foodData.Position;
+
+                foodComponent.Transform = food.transform;
+                foodComponent.Type = foodData.Type;
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FPS.Pool;
 using Game.Scripts.Common;
 using Game.Scripts.ECS.Components;
 using Game.Utils;
@@ -25,13 +26,16 @@ namespace Game.Scripts.ECS.Systems
         {
             var saveData = new SaveData();
             saveData.Dragons = new List<DragonDTO>();
+            saveData.Food = new List<FoodDTO>();
+            
             foreach (var i in _dragonFilter)
             {
                 ref var dragonComponent = ref _dragonFilter.Get1(i);
                 ref var consumerComponent = ref _dragonFilter.Get2(i);
                 ref var movableComponent = ref _dragonFilter.Get3(i);
 
-                var transform = movableComponent.NavMeshAgent.transform;
+                var transform = movableComponent.Transform;
+                
 
                 var dragonData = new DragonDTO
                 {
@@ -40,6 +44,17 @@ namespace Game.Scripts.ECS.Systems
                     Type = dragonComponent.Type
                 };
                 saveData.Dragons.Add(dragonData);
+            }
+            
+            foreach (var i in _foodFilter)
+            {
+                ref var foodComponent = ref _foodFilter.Get1(i);
+                var foodData = new FoodDTO
+                {
+                    Position = foodComponent.Transform.position,
+                    Type = foodComponent.Type
+                };
+                saveData.Food.Add(foodData);
             }
 
             Save(saveData);

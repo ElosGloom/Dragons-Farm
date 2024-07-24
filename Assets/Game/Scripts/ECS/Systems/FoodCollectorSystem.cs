@@ -24,7 +24,9 @@ namespace Game.Scripts.ECS.Systems
                 if (foodConsumerComponent.EatingTimeLeft <= 0)
                 {
                     foodConsumerComponent.FoodCollected++;
+                    
                     FluffyPool.Return(dragonTargetComponent.Target);
+                    
                     dragonTargetComponent.Target = null;
                     dragonEntity.Del<DragonTargetComponent>();
                     dragonEntity.Del<BusyDragonComponent>();

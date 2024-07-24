@@ -5,7 +5,7 @@ namespace Game.Scripts.Common
     public class SaveData
     {
         public List<DragonDTO> Dragons;
-        public EggDTO[] Eggs;
-        public FoodDTO[] Food;
+        public List<EggDTO> Eggs;
+        public List<FoodDTO> Food;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using FPS.Pool;
 using Game.Scripts.Common;
 using Game.Scripts.ECS.Components;
+using Game.Scripts.ECS.Monobehaviours;
 using Game.Scripts.UI;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -43,11 +44,10 @@ namespace Game.Scripts.ECS.Systems
             ref var foodComponent = ref foodEntity.Get<FoodComponent>();
             foodEntity.Get<AvailableFoodComponent>();
 
-            var food = FluffyPool.Get<Transform>(_type.ToString());
-            food.position = hitPoint;
+            var foodTransform = FoodFactory.CreateFood(_type, hitPoint);
 
-            foodComponent.Transform = food.transform;
-            foodComponent.Type = _type;
+            foodComponent.Transform = foodTransform;
+            foodComponent.Type =_type;
         }
 
         public void Destroy()

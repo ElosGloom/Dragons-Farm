@@ -84,6 +84,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodConsumerComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\FoodFactory.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\RotateToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Common\StaticDataWindow.cs" />
@@ -135,6 +136,7 @@
      <Compile Include="Assets\Game\Scripts\Common\DragonType.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\RandomRotation.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\SatietyCheckSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\FoodView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
