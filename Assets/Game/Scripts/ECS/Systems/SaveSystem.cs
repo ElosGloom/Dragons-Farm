@@ -19,7 +19,7 @@ namespace Game.Scripts.ECS.Systems
         public void Save(SaveData data)
         {
             string jsonData = JsonConvert.SerializeObject(data, new Vector3Converter());
-            PlayerPrefs.SetString("SaveData", jsonData);
+            PlayerPrefs.SetString("SaveData", GZip.Compress(jsonData));
         }
 
         public void Destroy()
@@ -28,7 +28,7 @@ namespace Game.Scripts.ECS.Systems
             saveData.Dragons = new List<DragonDTO>();
             saveData.Food = new List<FoodDTO>();
             saveData.Eggs = new List<EggDTO>();
-            
+
             foreach (var i in _dragonFilter)
             {
                 ref var dragonComponent = ref _dragonFilter.Get1(i);
@@ -36,7 +36,7 @@ namespace Game.Scripts.ECS.Systems
                 ref var movableComponent = ref _dragonFilter.Get3(i);
 
                 var transform = movableComponent.Transform;
-                
+
 
                 var dragonData = new DragonDTO
                 {
@@ -46,13 +46,14 @@ namespace Game.Scripts.ECS.Systems
                 };
                 saveData.Dragons.Add(dragonData);
             }
+
             foreach (var i in _eggFilter)
             {
                 ref var eggComponent = ref _eggFilter.Get1(i);
-              
+
 
                 var position = eggComponent.Position;
-                
+
 
                 var eggData = new EggDTO
                 {
@@ -62,7 +63,7 @@ namespace Game.Scripts.ECS.Systems
                 };
                 saveData.Eggs.Add(eggData);
             }
-            
+
             foreach (var i in _foodFilter)
             {
                 ref var foodComponent = ref _foodFilter.Get1(i);

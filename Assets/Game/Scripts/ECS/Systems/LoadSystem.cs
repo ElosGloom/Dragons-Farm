@@ -18,7 +18,7 @@ namespace Game.Scripts.ECS.Systems
         public SaveData Load()
         {
             string jsonData = PlayerPrefs.GetString("SaveData");
-            return JsonConvert.DeserializeObject<SaveData>(jsonData);
+            return JsonConvert.DeserializeObject<SaveData>(GZip.Decompress(jsonData));
         }
 
         public void Init()
