@@ -27,6 +27,7 @@ namespace Game.Scripts.ECS.Systems
             var saveData = new SaveData();
             saveData.Dragons = new List<DragonDTO>();
             saveData.Food = new List<FoodDTO>();
+            saveData.Eggs = new List<EggDTO>();
             
             foreach (var i in _dragonFilter)
             {
@@ -44,6 +45,22 @@ namespace Game.Scripts.ECS.Systems
                     Type = dragonComponent.Type
                 };
                 saveData.Dragons.Add(dragonData);
+            }
+            foreach (var i in _eggFilter)
+            {
+                ref var eggComponent = ref _eggFilter.Get1(i);
+              
+
+                var position = eggComponent.Position;
+                
+
+                var eggData = new EggDTO
+                {
+                    Timer = eggComponent.BornTimeLeft,
+                    Position = position,
+                    Type = eggComponent.Type
+                };
+                saveData.Eggs.Add(eggData);
             }
             
             foreach (var i in _foodFilter)

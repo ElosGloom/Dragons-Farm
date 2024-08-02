@@ -1,6 +1,5 @@
 ﻿using Game.Scripts.Common;
 using Game.Scripts.ECS.Monobehaviours;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 

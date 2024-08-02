@@ -1,6 +1,7 @@
 ﻿using FPS.Pool;
 using Game.Scripts.Common;
 using Game.Scripts.ECS.Components;
+using Game.Scripts.ECS.Monobehaviours;
 using Leopotam.Ecs;
 using Newtonsoft.Json;
 using UnityEngine;
@@ -12,6 +13,7 @@ namespace Game.Scripts.ECS.Systems
     {
         private SceneData _sceneData;
         private EcsWorld _ecsWorld;
+        private StaticData _staticData;
 
         public SaveData Load()
         {
@@ -31,7 +33,16 @@ namespace Game.Scripts.ECS.Systems
                 readyToBornComponent.Position = dragonData.Position;
                 readyToBornComponent.Type = dragonData.Type;
                 consumerComponent.FoodCollected = dragonData.FoodCollected;
+            }
 
+            foreach (var eggData in saveData.Eggs)
+            {
+                var eggEntity = _ecsWorld.NewEntity();
+                ref var eggComponent = ref eggEntity.Get<EggComponent>();
+                eggComponent.Position = eggData.Position;
+                eggComponent.Type = eggData.Type;
+                eggComponent.BornTimeLeft = eggData.Timer;
+                
             }
 
             foreach (var foodData in saveData.Food)

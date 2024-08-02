@@ -24,16 +24,9 @@ namespace Game.Scripts.ECS.Systems
                 
                 var eggEntity = _ecsWorld.NewEntity();
                 ref var eggComponent = ref eggEntity.Get<EggComponent>();
+                
                 eggComponent.Type = dragonComponent.Type;
-
-                EggView eggView = EggFactory.CreateEgg(_staticData,
-                    dragonComponent.Type,
-                    movableComponent.NavMeshAgent.transform.position);
-                eggComponent.Position = eggView.transform.position;
-                eggComponent.TimeToHatch = eggView.timeToHatch;
-                eggComponent.BornTimeLeft = eggComponent.TimeToHatch;
-                eggComponent.EggView = eggView;
-                eggComponent.FillImage = eggView.fillImage;
+                eggComponent.Position = movableComponent.NavMeshAgent.transform.position;
                 
                 dragonEntity.Del<SatietyComponent>();
                 

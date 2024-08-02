@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggRenderer: {fileID: 8864289358424992411}
-  timeToHatch: 60
+  timeToHatch: 30
   fillImage: {fileID: 4658013645388402155}
 --- !u!114 &8415713997661267964
 MonoBehaviour:

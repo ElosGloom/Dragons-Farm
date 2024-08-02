@@ -26,6 +26,7 @@ namespace Game.Scripts.ECS
                 .Add(new DragonButtonClickSystem())
                 .Add(new DragonSpawnSystem())
                 .Add(new SatietyCheckSystem())
+                .Add(new EggLayingSystem())
                 .Add(new EggCreatorSystem())
                 .Add(new EggHatchingSystem())
                 .Add(new FoodSpawnSystem())

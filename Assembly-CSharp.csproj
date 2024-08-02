@@ -61,6 +61,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Components\WaitingToHatchComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\Game\Scripts\Common\EggFactory.cs" />
      <Compile Include="Assets\Game\Scripts\UI\FoodButtonElement.cs" />
@@ -88,6 +89,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\RotateToTargetSystem.cs" />
      <Compile Include="Assets\Game\Scripts\Common\StaticDataWindow.cs" />
+     <Compile Include="Assets\Game\Scripts\ECS\Systems\EggLayingSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonButtonClickSystem.cs" />
@@ -136,7 +138,6 @@
      <Compile Include="Assets\Game\Scripts\Common\DragonType.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\RandomRotation.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\SatietyCheckSystem.cs" />
-     <Compile Include="Assets\Game\Scripts\ECS\Monobehaviours\FoodView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\ExternalAssets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

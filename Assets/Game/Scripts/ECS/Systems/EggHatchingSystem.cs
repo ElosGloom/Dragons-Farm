@@ -9,7 +9,7 @@ namespace Game.Scripts.ECS.Systems
 {
     public class EggHatchingSystem : IEcsRunSystem
     {
-        private EcsFilter<EggComponent> _eggFilter;
+        private EcsFilter<EggComponent, WaitingToHatchComponent> _eggFilter;
         private EcsWorld _ecsWorld;
         private StaticData _staticData;
         private SceneData _sceneData;
