@@ -10,8 +10,6 @@ namespace Game.Scripts.Common
         [SerializeField] private Collider spawnTrigger;
         [SerializeField] private Button cubeButton;
         [SerializeField] private Button sphereButton;
-        private GameObject _cube;
-        private GameObject _sphere;
 
         private void Start()
         {
@@ -21,14 +19,14 @@ namespace Game.Scripts.Common
 
         private void OnCubeButtonClick()
         {
-            _cube = PoolObjects.GetFromPool("cube");
-            _cube.transform.position = GetRandomSpawnPosition();
+           var cube = PoolObjects.GetFromPool("cube");
+            cube.transform.position = GetRandomSpawnPosition();
         }
 
         private void OnSphereButtonClick()
         {
-            _sphere = PoolObjects.GetFromPool("sphere");
-            _sphere.transform.position = GetRandomSpawnPosition();
+           var sphere = PoolObjects.GetFromPool("sphere");
+            sphere.transform.position = GetRandomSpawnPosition();
         }
 
         private Vector3 GetRandomSpawnPosition()
