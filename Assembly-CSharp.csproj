@@ -64,6 +64,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodDetectSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\WaitingToHatchComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\Extensions.cs" />
      <Compile Include="Assets\Game\Scripts\Common\EggFactory.cs" />
      <Compile Include="Assets\Game\Scripts\UI\FoodButtonElement.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -78,6 +79,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonSpawnSystem.cs" />
      <Compile Include="Assets\Game\Scripts\UI\FoodButtonsGroup.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\Randomizer.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\LoadSystem.cs" />
      <Compile Include="Assets\Game\Scripts\UI\DragonButtonGroupElement.cs" />
      <Compile Include="Assets\Game\Scripts\Utils\ScriptableObjectSearcher.cs" />
@@ -86,6 +88,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodComponent.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\FoodConsumerComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\Pool\PoolObjects.cs" />
      <Compile Include="Assets\Game\Scripts\Common\FoodFactory.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\RuntimeData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\RotateToTargetSystem.cs" />
@@ -93,6 +96,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Systems\EggLayingSystem.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\StaticData.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\BusyDragonComponent.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\Spawner.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\DragonButtonClickSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -112,6 +116,7 @@
      <Compile Include="Assets\Game\Scripts\Common\AppInitializer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\Game\Scripts\Pool\SpecificPool.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\Game\Scripts\Common\DragonStats.cs" />
@@ -129,6 +134,7 @@
      <Compile Include="Assets\Game\Scripts\ECS\Components\EggComponent.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Systems\FoodSpawnSystem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\Game\Scripts\Common\Destroyer.cs" />
      <Compile Include="Assets\ExternalAssets\Suriyun\Scripts\Camera Scripts\MouseOrbitImproved.cs" />
      <Compile Include="Assets\Game\Scripts\ECS\Components\MovableComponent.cs" />
      <Compile Include="Assets\Game\Scripts\Vector3Converter.cs" />
@@ -342,6 +348,7 @@
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Hybrid\TCP2 Hybrid URP Support.cginc" />
      <Folder Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\Water" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Standard PBS\TCP2_Standard PBS (Specular).shader" />
+     <Folder Include="Assets\Game\Scripts\Pool" />
      <Folder Include="Assets\ExternalAssets\Suriyun\Dragons_SD\Materials\Dino_Face" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders Generated\Examples\SG2\Water.shader" />
      <None Include="Assets\ExternalAssets\JMO Assets\Toony Colors Pro\Shaders\Legacy\Variants Base\TCP2_Mobile_Outline.shader" />
